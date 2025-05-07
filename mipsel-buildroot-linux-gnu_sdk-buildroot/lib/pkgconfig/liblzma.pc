@@ -1,0 +1,19 @@
+#
+# Author: Lasse Collin
+#
+# This file has been put into the public domain.
+# You can do whatever you want with this file.
+#
+
+prefix=/opt/mipsel-buildroot-linux-gnu_sdk-buildroot
+exec_prefix=/opt/mipsel-buildroot-linux-gnu_sdk-buildroot
+libdir=/opt/mipsel-buildroot-linux-gnu_sdk-buildroot/lib
+includedir=/opt/mipsel-buildroot-linux-gnu_sdk-buildroot/include
+
+Name: liblzma
+Description: General purpose data compression library
+URL: https://tukaani.org/xz/
+Version: 5.2.5
+Cflags: -I${includedir}
+Libs: -L${libdir} -llzma
+Libs.private: -pthread -lpthread

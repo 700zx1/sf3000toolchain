@@ -1,0 +1,11 @@
+prefix=/opt/mipsel-buildroot-linux-gnu_sdk-buildroot
+exec_prefix=/opt/mipsel-buildroot-linux-gnu_sdk-buildroot
+libdir=/opt/mipsel-buildroot-linux-gnu_sdk-buildroot/lib
+includedir=/opt/mipsel-buildroot-linux-gnu_sdk-buildroot/include
+
+Name: libkmod
+Description: Library to deal with kernel modules
+Version: 28
+Libs: -L${libdir} -lkmod
+Libs.private:   
+Cflags: -I${includedir}

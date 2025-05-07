@@ -1,0 +1,14 @@
+prefix=/usr
+exec_prefix=${prefix}
+libdir=/usr/lib
+includedir=/usr/include
+
+Name: libavformat
+Description: FFmpeg container format library
+Version: 58.76.100
+Requires: 
+Requires.private: libavcodec >= 58.134.100, libavutil >= 56.70.100
+Conflicts:
+Libs: -L${libdir}  -lavformat 
+Libs.private: -lm -L/opt/mipsel-buildroot-linux-gnu_sdk-buildroot/bin/../mipsel-buildroot-linux-gnu/sysroot/usr/lib -lz -L/opt/mipsel-buildroot-linux-gnu_sdk-buildroot/bin/../mipsel-buildroot-linux-gnu/sysroot/usr/lib -lssl -lcrypto
+Cflags: -I${includedir}
